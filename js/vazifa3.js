@@ -10,12 +10,13 @@ document.querySelector("body").addEventListener("dblclick", (e) => {
   span.classList.add("delete");
   span.textContent = "x";
   div.append(span);
-  div.addEventListener("click", (e) => {
-    let p = document.createElement("p");
-    div.append(p);
-    // p.innerHTML = "fvd";
-    p.style.width = "90%";
-    p.style.height = "100%";
+  let p = document.createElement("p");
+  div.append(p);
+  p.innerHTML = "matn yozish uchun";
+  p.style.width = "90%";
+  p.style.height = "100%";
+  div.addEventListener("click", () => {
+    p.innerHTML = "";
     p.setAttribute("contenteditable", true);
   });
   span.addEventListener("click", (e) => {
