@@ -4,7 +4,7 @@ let minuteElem = document.querySelector(".minute");
 let secondElem = document.querySelector(".second");
 
 let counter = () => {
-  let examenDay = new Date("2023-11-10T08:00:00");
+  let examenDay = new Date("2024-02-10T08:00:00");
   let hozir = new Date();
   let qolganVaqt = examenDay - hozir;
 

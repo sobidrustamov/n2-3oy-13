@@ -15,7 +15,7 @@ document.querySelector("body").addEventListener("dblclick", (e) => {
   p.innerHTML = "matn yozish uchun";
   p.style.width = "90%";
   p.style.height = "100%";
-  div.addEventListener("click", () => {
+  div.addEventListener("blur", () => {
     p.innerHTML = "";
     p.setAttribute("contenteditable", true);
   });
